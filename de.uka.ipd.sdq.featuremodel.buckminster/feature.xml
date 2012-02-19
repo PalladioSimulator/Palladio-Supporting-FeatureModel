@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="de.uka.ipd.sdq.featuremodel.buckminster"
+      label="Palladio Feature Model - Buckminster Build"
+      version="1.0.0.qualifier">
+
+   <includes
+         id="de.uka.ipd.sdq.featuremodel.feature.model"
+         version="0.0.0"/>
+
+   <includes
+         id="de.uka.ipd.sdq.featuremodel.feature.config"
+         version="0.0.0"/>
+
+</feature>

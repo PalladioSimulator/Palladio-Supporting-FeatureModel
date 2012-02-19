@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="de.uka.ipd.sdq.featuremodel.feature.config"
+      label="Palladio Feature Model - Configuration"
+      version="1.0.0.qualifier">
+
+   <description url="http://www.palladio-simulator.com">
+      A configuration model for the Palladio Feature Model. 
+This allows to specify a configuration for a specific Feature
+Model which can either be used as a default or an individual
+configuration.
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.palladio-simulator.com">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="de.uka.ipd.sdq.featuremodel"/>
+      <import plugin="org.eclipse.ocl.ecore" version="1.2.1" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.identifier" version="2.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.emf.edit"/>
+      <import plugin="de.uka.ipd.sdq.featuremodel.edit"/>
+      <import plugin="de.uka.ipd.sdq.identifier.edit"/>
+      <import plugin="org.eclipse.emf.ecore.edit"/>
+      <import plugin="org.eclipse.uml2.common.edit"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+      <import plugin="org.eclipse.emf.edit.ui"/>
+      <import plugin="org.eclipse.ui.ide"/>
+   </requires>
+
+   <plugin
+         id="de.uka.ipd.sdq.featureconfig"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="de.uka.ipd.sdq.featureconfig.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="de.uka.ipd.sdq.featureconfig.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
