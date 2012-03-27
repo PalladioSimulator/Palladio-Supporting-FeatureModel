@@ -214,6 +214,7 @@ litigation.
       <import plugin="org.eclipse.core.resources"/>
       <import plugin="org.eclipse.emf.edit.ui"/>
       <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="de.uka.ipd.sdq.identifier" version="2.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin
@@ -232,24 +233,6 @@ litigation.
 
    <plugin
          id="de.uka.ipd.sdq.featuremodel.editor"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-	<!-- 
-		These plugins are included to not force a user to 
-		install the complete workflow engine or palladio workbench
-	-->
-   <plugin
-         id="de.uka.ipd.sdq.identifier"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="de.uka.ipd.sdq.identifier.edit"
          download-size="0"
          install-size="0"
          version="0.0.0"
