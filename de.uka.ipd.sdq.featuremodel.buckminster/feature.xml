@@ -203,6 +203,11 @@ Each party waives its rights to a jury trial in any resulting
 litigation.
    </license>
 
+   <url>
+      <discovery label="Palladio Commons" url="http://sdqweb.ipd.kit.edu/eclipse/commons/releases/1.1"/>
+      <discovery label="Eclipse Orbit" url="http://download.eclipse.org/tools/orbit/downloads/drops/R20110523182458/repository/"/>
+   </url>
+
    <includes
          id="de.uka.ipd.sdq.featuremodel.feature.model"
          version="0.0.0"/>

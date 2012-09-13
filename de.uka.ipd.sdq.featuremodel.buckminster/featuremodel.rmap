@@ -4,7 +4,6 @@
   <rm:locator searchPathRef="localresources" failOnError="false"/>
   <rm:locator searchPathRef="featuremodel" failOnError="false" pattern="^de\.uka\.ipd\.sdq\..*" />
   <rm:locator searchPathRef="palladio-commons" failOnError="false" pattern="^de\.uka\.ipd\.sdq\..*" />
-  <rm:locator searchPathRef="mediniqvt" failOnError="false" pattern="^de\.ikv\.medini\.qvt\..*" />
   <rm:locator searchPathRef="eclipseIndigo" failOnError="false" pattern="^org\.eclipse\.m2m\..*" />
   <rm:locator searchPathRef="mdt" failOnError="false" pattern="^org\.eclipse\.ocl" />
   <rm:locator searchPathRef="emf" failOnError="false" pattern="^org\.eclipse\.emf\..*" />
@@ -23,7 +22,7 @@
 	  <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
 	 	<rm:property key="buckminster.source" value="false"/>
 	    <rm:property key="buckminster.mutable" value="false"/>
-	  	<rm:uri format="http://sdqweb.ipd.kit.edu/eclipse/commons/releases/1.0/"/>
+	  	<rm:uri format="http://sdqweb.ipd.kit.edu/eclipse/commons/releases/1.1/"/>
 	  </rm:provider>
   </rm:searchPath>
   <rm:searchPath name="orbit">

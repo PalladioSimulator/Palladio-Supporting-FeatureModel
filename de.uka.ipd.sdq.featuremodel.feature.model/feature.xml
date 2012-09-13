@@ -2,7 +2,7 @@
 <feature
       id="de.uka.ipd.sdq.featuremodel.feature.model"
       label="Palladio Feature Model"
-      version="1.0.0.qualifier">
+      version="1.2.0.qualifier">
 
    <license url="http://www.eclipse.org/legal/epl-v10.html">
       Eclipse Public License - v 1.0

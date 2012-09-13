@@ -2,7 +2,7 @@
 <feature
       id="de.uka.ipd.sdq.featuremodel.feature.config"
       label="Palladio Feature Model - Configuration"
-      version="1.0.0.qualifier">
+      version="1.2.0.qualifier">
 
    <description url="http://www.palladio-simulator.com">
       A configuration model for the Palladio Feature Model. 
