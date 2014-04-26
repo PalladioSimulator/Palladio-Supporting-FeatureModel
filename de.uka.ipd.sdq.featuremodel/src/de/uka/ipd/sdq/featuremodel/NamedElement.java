@@ -26,29 +26,29 @@ import de.uka.ipd.sdq.identifier.Identifier;
  */
 public interface NamedElement extends Identifier {
 	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Name</b></em>' attribute.
+     * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see de.uka.ipd.sdq.featuremodel.featuremodelPackage#getNamedElement_Name()
-	 * @model required="true" ordered="false"
-	 * @generated
-	 */
+     * @return the value of the '<em>Name</em>' attribute.
+     * @see #setName(String)
+     * @see de.uka.ipd.sdq.featuremodel.featuremodelPackage#getNamedElement_Name()
+     * @model required="true" ordered="false"
+     * @generated
+     */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link de.uka.ipd.sdq.featuremodel.NamedElement#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link de.uka.ipd.sdq.featuremodel.NamedElement#getName <em>Name</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>Name</em>' attribute.
+     * @see #getName()
+     * @generated
+     */
 	void setName(String value);
 
 } // NamedElement

@@ -40,43 +40,43 @@ import de.uka.ipd.sdq.featuremodel.impl.NamedElementImpl;
  */
 public abstract class AttributeValueImpl extends NamedElementImpl implements AttributeValue {
 	/**
-	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getValue()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getValue()
+     * @generated
+     * @ordered
+     */
 	protected static final String VALUE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getValue()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getValue()
+     * @generated
+     * @ordered
+     */
 	protected String value = VALUE_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected AttributeValueImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return featureconfigPackage.Literals.ATTRIBUTE_VALUE;
-	}
+        return featureconfigPackage.Literals.ATTRIBUTE_VALUE;
+    }
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -123,184 +123,184 @@ public abstract class AttributeValueImpl extends NamedElementImpl implements Att
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setValue(String newValue) {
-		String oldValue = value;
-		value = newValue;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, featureconfigPackage.ATTRIBUTE_VALUE__VALUE, oldValue, value));
-	}
+        String oldValue = value;
+        value = newValue;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, featureconfigPackage.ATTRIBUTE_VALUE__VALUE, oldValue, value));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ConfigNode getConfignode() {
-		if (eContainerFeatureID() != featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE) return null;
-		return (ConfigNode)eContainer();
-	}
+        if (eContainerFeatureID() != featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE) return null;
+        return (ConfigNode)eInternalContainer();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NotificationChain basicSetConfignode(ConfigNode newConfignode, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject)newConfignode, featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE, msgs);
-		return msgs;
-	}
+        msgs = eBasicSetContainer((InternalEObject)newConfignode, featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE, msgs);
+        return msgs;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setConfignode(ConfigNode newConfignode) {
-		if (newConfignode != eInternalContainer() || (eContainerFeatureID() != featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE && newConfignode != null)) {
-			if (EcoreUtil.isAncestor(this, newConfignode))
-				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
-			NotificationChain msgs = null;
-			if (eInternalContainer() != null)
-				msgs = eBasicRemoveFromContainer(msgs);
-			if (newConfignode != null)
-				msgs = ((InternalEObject)newConfignode).eInverseAdd(this, featureconfigPackage.CONFIG_NODE__ATTRIBUTEVALUE, ConfigNode.class, msgs);
-			msgs = basicSetConfignode(newConfignode, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE, newConfignode, newConfignode));
-	}
+        if (newConfignode != eInternalContainer() || (eContainerFeatureID() != featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE && newConfignode != null)) {
+            if (EcoreUtil.isAncestor(this, newConfignode))
+                throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+            NotificationChain msgs = null;
+            if (eInternalContainer() != null)
+                msgs = eBasicRemoveFromContainer(msgs);
+            if (newConfignode != null)
+                msgs = ((InternalEObject)newConfignode).eInverseAdd(this, featureconfigPackage.CONFIG_NODE__ATTRIBUTEVALUE, ConfigNode.class, msgs);
+            msgs = basicSetConfignode(newConfignode, msgs);
+            if (msgs != null) msgs.dispatch();
+        }
+        else if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE, newConfignode, newConfignode));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
-				if (eInternalContainer() != null)
-					msgs = eBasicRemoveFromContainer(msgs);
-				return basicSetConfignode((ConfigNode)otherEnd, msgs);
-		}
-		return super.eInverseAdd(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
+                if (eInternalContainer() != null)
+                    msgs = eBasicRemoveFromContainer(msgs);
+                return basicSetConfignode((ConfigNode)otherEnd, msgs);
+        }
+        return super.eInverseAdd(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
-				return basicSetConfignode(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
+                return basicSetConfignode(null, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
-		switch (eContainerFeatureID()) {
-			case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
-				return eInternalContainer().eInverseRemove(this, featureconfigPackage.CONFIG_NODE__ATTRIBUTEVALUE, ConfigNode.class, msgs);
-		}
-		return super.eBasicRemoveFromContainerFeature(msgs);
-	}
+        switch (eContainerFeatureID()) {
+            case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
+                return eInternalContainer().eInverseRemove(this, featureconfigPackage.CONFIG_NODE__ATTRIBUTEVALUE, ConfigNode.class, msgs);
+        }
+        return super.eBasicRemoveFromContainerFeature(msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case featureconfigPackage.ATTRIBUTE_VALUE__VALUE:
-				return getValue();
-			case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
-				return getConfignode();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case featureconfigPackage.ATTRIBUTE_VALUE__VALUE:
+                return getValue();
+            case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
+                return getConfignode();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case featureconfigPackage.ATTRIBUTE_VALUE__VALUE:
-				setValue((String)newValue);
-				return;
-			case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
-				setConfignode((ConfigNode)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case featureconfigPackage.ATTRIBUTE_VALUE__VALUE:
+                setValue((String)newValue);
+                return;
+            case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
+                setConfignode((ConfigNode)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case featureconfigPackage.ATTRIBUTE_VALUE__VALUE:
-				setValue(VALUE_EDEFAULT);
-				return;
-			case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
-				setConfignode((ConfigNode)null);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case featureconfigPackage.ATTRIBUTE_VALUE__VALUE:
+                setValue(VALUE_EDEFAULT);
+                return;
+            case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
+                setConfignode((ConfigNode)null);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case featureconfigPackage.ATTRIBUTE_VALUE__VALUE:
-				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
-			case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
-				return getConfignode() != null;
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case featureconfigPackage.ATTRIBUTE_VALUE__VALUE:
+                return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+            case featureconfigPackage.ATTRIBUTE_VALUE__CONFIGNODE:
+                return getConfignode() != null;
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (value: ");
-		result.append(value);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (value: ");
+        result.append(value);
+        result.append(')');
+        return result.toString();
+    }
 
 } //AttributeValueImpl

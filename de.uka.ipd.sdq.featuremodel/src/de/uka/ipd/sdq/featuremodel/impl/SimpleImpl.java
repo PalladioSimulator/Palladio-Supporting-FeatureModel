@@ -45,228 +45,228 @@ import de.uka.ipd.sdq.featuremodel.util.featuremodelValidator;
  */
 public class SimpleImpl extends ChildRelationImpl implements Simple {
 	/**
-	 * The cached value of the '{@link #getOptionalChildren() <em>Optional Children</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getOptionalChildren() <em>Optional Children</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOptionalChildren()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getOptionalChildren()
+     * @generated
+     * @ordered
+     */
 	protected EList<Feature> optionalChildren;
 	/**
-	 * The cached value of the '{@link #getMandatoryChildren() <em>Mandatory Children</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getMandatoryChildren() <em>Mandatory Children</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMandatoryChildren()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getMandatoryChildren()
+     * @generated
+     * @ordered
+     */
 	protected EList<Feature> mandatoryChildren;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected SimpleImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return featuremodelPackage.Literals.SIMPLE;
-	}
+        return featuremodelPackage.Literals.SIMPLE;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<Feature> getMandatoryChildren() {
-		if (mandatoryChildren == null) {
-			mandatoryChildren = new EObjectContainmentWithInverseEList<Feature>(Feature.class, this, featuremodelPackage.SIMPLE__MANDATORY_CHILDREN, featuremodelPackage.FEATURE__SIMPLE_MANDATORY);
-		}
-		return mandatoryChildren;
-	}
+        if (mandatoryChildren == null) {
+            mandatoryChildren = new EObjectContainmentWithInverseEList<Feature>(Feature.class, this, featuremodelPackage.SIMPLE__MANDATORY_CHILDREN, featuremodelPackage.FEATURE__SIMPLE_MANDATORY);
+        }
+        return mandatoryChildren;
+    }
 
 	/**
-	 * The cached OCL expression body for the '{@link #atLeastOneChild(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>At Least One Child</em>}' operation.
-	 * <!-- begin-user-doc -->
+     * The cached OCL expression body for the '{@link #atLeastOneChild(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>At Least One Child</em>}' operation.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #atLeastOneChild(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+     * @see #atLeastOneChild(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+     * @generated
+     * @ordered
+     */
 	protected static final String AT_LEAST_ONE_CHILD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.optionalChildren->size()+self.mandatoryChildren->size()>=1";
 	/**
-	 * The cached OCL invariant for the '{@link #atLeastOneChild(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>At Least One Child</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+     * The cached OCL invariant for the '{@link #atLeastOneChild(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>At Least One Child</em>}' invariant operation.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #atLeastOneChild(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+     * @see #atLeastOneChild(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+     * @generated
+     * @ordered
+     */
 	protected static Constraint AT_LEAST_ONE_CHILD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<Feature> getOptionalChildren() {
-		if (optionalChildren == null) {
-			optionalChildren = new EObjectContainmentWithInverseEList<Feature>(Feature.class, this, featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN, featuremodelPackage.FEATURE__SIMPLE_OPTIONAL);
-		}
-		return optionalChildren;
-	}
+        if (optionalChildren == null) {
+            optionalChildren = new EObjectContainmentWithInverseEList<Feature>(Feature.class, this, featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN, featuremodelPackage.FEATURE__SIMPLE_OPTIONAL);
+        }
+        return optionalChildren;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public boolean atLeastOneChild(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (AT_LEAST_ONE_CHILD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(featuremodelPackage.Literals.SIMPLE);
-			try {
-				AT_LEAST_ONE_CHILD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(AT_LEAST_ONE_CHILD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(AT_LEAST_ONE_CHILD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(this)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 featuremodelValidator.DIAGNOSTIC_SOURCE,
-						 featuremodelValidator.SIMPLE__AT_LEAST_ONE_CHILD,
-						 EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "atLeastOneChild", EObjectValidator.getObjectLabel(this, context) }),
-						 new Object [] { this }));
-			}
-			return false;
-		}
-		return true;
-	}
+        if (AT_LEAST_ONE_CHILD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+            OCL.Helper helper = EOCL_ENV.createOCLHelper();
+            helper.setContext(featuremodelPackage.Literals.SIMPLE);
+            try {
+                AT_LEAST_ONE_CHILD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(AT_LEAST_ONE_CHILD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+            }
+            catch (ParserException pe) {
+                throw new UnsupportedOperationException(pe.getLocalizedMessage());
+            }
+        }
+        if (!EOCL_ENV.createQuery(AT_LEAST_ONE_CHILD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(this)) {
+            if (diagnostics != null) {
+                diagnostics.add
+                    (new BasicDiagnostic
+                        (Diagnostic.ERROR,
+                         featuremodelValidator.DIAGNOSTIC_SOURCE,
+                         featuremodelValidator.SIMPLE__AT_LEAST_ONE_CHILD,
+                         EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "atLeastOneChild", EObjectValidator.getObjectLabel(this, context) }),
+                         new Object [] { this }));
+            }
+            return false;
+        }
+        return true;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getOptionalChildren()).basicAdd(otherEnd, msgs);
-			case featuremodelPackage.SIMPLE__MANDATORY_CHILDREN:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getMandatoryChildren()).basicAdd(otherEnd, msgs);
-		}
-		return super.eInverseAdd(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN:
+                return ((InternalEList<InternalEObject>)(InternalEList<?>)getOptionalChildren()).basicAdd(otherEnd, msgs);
+            case featuremodelPackage.SIMPLE__MANDATORY_CHILDREN:
+                return ((InternalEList<InternalEObject>)(InternalEList<?>)getMandatoryChildren()).basicAdd(otherEnd, msgs);
+        }
+        return super.eInverseAdd(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN:
-				return ((InternalEList<?>)getOptionalChildren()).basicRemove(otherEnd, msgs);
-			case featuremodelPackage.SIMPLE__MANDATORY_CHILDREN:
-				return ((InternalEList<?>)getMandatoryChildren()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN:
+                return ((InternalEList<?>)getOptionalChildren()).basicRemove(otherEnd, msgs);
+            case featuremodelPackage.SIMPLE__MANDATORY_CHILDREN:
+                return ((InternalEList<?>)getMandatoryChildren()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN:
-				return getOptionalChildren();
-			case featuremodelPackage.SIMPLE__MANDATORY_CHILDREN:
-				return getMandatoryChildren();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN:
+                return getOptionalChildren();
+            case featuremodelPackage.SIMPLE__MANDATORY_CHILDREN:
+                return getMandatoryChildren();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN:
-				getOptionalChildren().clear();
-				getOptionalChildren().addAll((Collection<? extends Feature>)newValue);
-				return;
-			case featuremodelPackage.SIMPLE__MANDATORY_CHILDREN:
-				getMandatoryChildren().clear();
-				getMandatoryChildren().addAll((Collection<? extends Feature>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN:
+                getOptionalChildren().clear();
+                getOptionalChildren().addAll((Collection<? extends Feature>)newValue);
+                return;
+            case featuremodelPackage.SIMPLE__MANDATORY_CHILDREN:
+                getMandatoryChildren().clear();
+                getMandatoryChildren().addAll((Collection<? extends Feature>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN:
-				getOptionalChildren().clear();
-				return;
-			case featuremodelPackage.SIMPLE__MANDATORY_CHILDREN:
-				getMandatoryChildren().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN:
+                getOptionalChildren().clear();
+                return;
+            case featuremodelPackage.SIMPLE__MANDATORY_CHILDREN:
+                getMandatoryChildren().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN:
-				return optionalChildren != null && !optionalChildren.isEmpty();
-			case featuremodelPackage.SIMPLE__MANDATORY_CHILDREN:
-				return mandatoryChildren != null && !mandatoryChildren.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case featuremodelPackage.SIMPLE__OPTIONAL_CHILDREN:
+                return optionalChildren != null && !optionalChildren.isEmpty();
+            case featuremodelPackage.SIMPLE__MANDATORY_CHILDREN:
+                return mandatoryChildren != null && !mandatoryChildren.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * The cached environment for evaluating OCL expressions.
-	 * <!-- begin-user-doc -->
+     * The cached environment for evaluating OCL expressions.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+     * @generated
+     * @ordered
+     */
 	protected static final OCL EOCL_ENV = OCL.newInstance();
 
 } //SimpleImpl

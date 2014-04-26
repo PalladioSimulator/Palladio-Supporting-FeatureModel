@@ -39,269 +39,269 @@ import de.uka.ipd.sdq.featureconfig.featureconfigPackage;
  */
 public class ConfigurationImpl extends EObjectImpl implements Configuration {
 	/**
-	 * The cached value of the '{@link #getDefaultConfig() <em>Default Config</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getDefaultConfig() <em>Default Config</em>}' containment reference.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDefaultConfig()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getDefaultConfig()
+     * @generated
+     * @ordered
+     */
 	protected FeatureConfig defaultConfig;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getName()
+     * @generated
+     * @ordered
+     */
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getName()
+     * @generated
+     * @ordered
+     */
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getConfigOverrides() <em>Config Overrides</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getConfigOverrides() <em>Config Overrides</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConfigOverrides()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getConfigOverrides()
+     * @generated
+     * @ordered
+     */
 	protected EList<FeatureConfig> configOverrides;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ConfigurationImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return featureconfigPackage.Literals.CONFIGURATION;
-	}
+        return featureconfigPackage.Literals.CONFIGURATION;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<FeatureConfig> getConfigOverrides() {
-		if (configOverrides == null) {
-			configOverrides = new EObjectContainmentWithInverseEList<FeatureConfig>(FeatureConfig.class, this, featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES, featureconfigPackage.FEATURE_CONFIG__CONFIGURATION_OVERRIDES);
-		}
-		return configOverrides;
-	}
+        if (configOverrides == null) {
+            configOverrides = new EObjectContainmentWithInverseEList<FeatureConfig>(FeatureConfig.class, this, featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES, featureconfigPackage.FEATURE_CONFIG__CONFIGURATION_OVERRIDES);
+        }
+        return configOverrides;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG:
-				if (defaultConfig != null)
-					msgs = ((InternalEObject)defaultConfig).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG, null, msgs);
-				return basicSetDefaultConfig((FeatureConfig)otherEnd, msgs);
-			case featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getConfigOverrides()).basicAdd(otherEnd, msgs);
-		}
-		return super.eInverseAdd(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG:
+                if (defaultConfig != null)
+                    msgs = ((InternalEObject)defaultConfig).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG, null, msgs);
+                return basicSetDefaultConfig((FeatureConfig)otherEnd, msgs);
+            case featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES:
+                return ((InternalEList<InternalEObject>)(InternalEList<?>)getConfigOverrides()).basicAdd(otherEnd, msgs);
+        }
+        return super.eInverseAdd(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FeatureConfig getDefaultConfig() {
-		return defaultConfig;
-	}
+        return defaultConfig;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NotificationChain basicSetDefaultConfig(FeatureConfig newDefaultConfig, NotificationChain msgs) {
-		FeatureConfig oldDefaultConfig = defaultConfig;
-		defaultConfig = newDefaultConfig;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG, oldDefaultConfig, newDefaultConfig);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+        FeatureConfig oldDefaultConfig = defaultConfig;
+        defaultConfig = newDefaultConfig;
+        if (eNotificationRequired()) {
+            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG, oldDefaultConfig, newDefaultConfig);
+            if (msgs == null) msgs = notification; else msgs.add(notification);
+        }
+        return msgs;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setDefaultConfig(FeatureConfig newDefaultConfig) {
-		if (newDefaultConfig != defaultConfig) {
-			NotificationChain msgs = null;
-			if (defaultConfig != null)
-				msgs = ((InternalEObject)defaultConfig).eInverseRemove(this, featureconfigPackage.FEATURE_CONFIG__CONFIGURATION_DEFAULT, FeatureConfig.class, msgs);
-			if (newDefaultConfig != null)
-				msgs = ((InternalEObject)newDefaultConfig).eInverseAdd(this, featureconfigPackage.FEATURE_CONFIG__CONFIGURATION_DEFAULT, FeatureConfig.class, msgs);
-			msgs = basicSetDefaultConfig(newDefaultConfig, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG, newDefaultConfig, newDefaultConfig));
-	}
+        if (newDefaultConfig != defaultConfig) {
+            NotificationChain msgs = null;
+            if (defaultConfig != null)
+                msgs = ((InternalEObject)defaultConfig).eInverseRemove(this, featureconfigPackage.FEATURE_CONFIG__CONFIGURATION_DEFAULT, FeatureConfig.class, msgs);
+            if (newDefaultConfig != null)
+                msgs = ((InternalEObject)newDefaultConfig).eInverseAdd(this, featureconfigPackage.FEATURE_CONFIG__CONFIGURATION_DEFAULT, FeatureConfig.class, msgs);
+            msgs = basicSetDefaultConfig(newDefaultConfig, msgs);
+            if (msgs != null) msgs.dispatch();
+        }
+        else if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG, newDefaultConfig, newDefaultConfig));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getName() {
-		return name;
-	}
+        return name;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, featureconfigPackage.CONFIGURATION__NAME, oldName, name));
-	}
+        String oldName = name;
+        name = newName;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, featureconfigPackage.CONFIGURATION__NAME, oldName, name));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG:
-				return basicSetDefaultConfig(null, msgs);
-			case featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES:
-				return ((InternalEList<?>)getConfigOverrides()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG:
+                return basicSetDefaultConfig(null, msgs);
+            case featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES:
+                return ((InternalEList<?>)getConfigOverrides()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG:
-				return getDefaultConfig();
-			case featureconfigPackage.CONFIGURATION__NAME:
-				return getName();
-			case featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES:
-				return getConfigOverrides();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG:
+                return getDefaultConfig();
+            case featureconfigPackage.CONFIGURATION__NAME:
+                return getName();
+            case featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES:
+                return getConfigOverrides();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG:
-				setDefaultConfig((FeatureConfig)newValue);
-				return;
-			case featureconfigPackage.CONFIGURATION__NAME:
-				setName((String)newValue);
-				return;
-			case featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES:
-				getConfigOverrides().clear();
-				getConfigOverrides().addAll((Collection<? extends FeatureConfig>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG:
+                setDefaultConfig((FeatureConfig)newValue);
+                return;
+            case featureconfigPackage.CONFIGURATION__NAME:
+                setName((String)newValue);
+                return;
+            case featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES:
+                getConfigOverrides().clear();
+                getConfigOverrides().addAll((Collection<? extends FeatureConfig>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG:
-				setDefaultConfig((FeatureConfig)null);
-				return;
-			case featureconfigPackage.CONFIGURATION__NAME:
-				setName(NAME_EDEFAULT);
-				return;
-			case featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES:
-				getConfigOverrides().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG:
+                setDefaultConfig((FeatureConfig)null);
+                return;
+            case featureconfigPackage.CONFIGURATION__NAME:
+                setName(NAME_EDEFAULT);
+                return;
+            case featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES:
+                getConfigOverrides().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG:
-				return defaultConfig != null;
-			case featureconfigPackage.CONFIGURATION__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES:
-				return configOverrides != null && !configOverrides.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case featureconfigPackage.CONFIGURATION__DEFAULT_CONFIG:
+                return defaultConfig != null;
+            case featureconfigPackage.CONFIGURATION__NAME:
+                return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+            case featureconfigPackage.CONFIGURATION__CONFIG_OVERRIDES:
+                return configOverrides != null && !configOverrides.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (name: ");
+        result.append(name);
+        result.append(')');
+        return result.toString();
+    }
 
 } //ConfigurationImpl

@@ -6,10 +6,10 @@
  */
 package de.uka.ipd.sdq.featuremodel.impl;
 
+import org.eclipse.emf.ecore.EClass;
+
 import de.uka.ipd.sdq.featuremodel.ExternalObjectAttribute;
 import de.uka.ipd.sdq.featuremodel.featuremodelPackage;
-
-import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,22 +22,22 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class ExternalObjectAttributeImpl extends AttributeImpl implements ExternalObjectAttribute {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ExternalObjectAttributeImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return featuremodelPackage.Literals.EXTERNAL_OBJECT_ATTRIBUTE;
-	}
+        return featuremodelPackage.Literals.EXTERNAL_OBJECT_ATTRIBUTE;
+    }
 
 } //ExternalObjectAttributeImpl

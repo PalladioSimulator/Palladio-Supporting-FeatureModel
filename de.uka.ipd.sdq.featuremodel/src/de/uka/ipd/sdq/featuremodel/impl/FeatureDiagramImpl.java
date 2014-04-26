@@ -41,216 +41,216 @@ import de.uka.ipd.sdq.featuremodel.featuremodelPackage;
  */
 public class FeatureDiagramImpl extends NamedElementImpl implements FeatureDiagram {
 	/**
-	 * The cached value of the '{@link #getRootFeature() <em>Root Feature</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getRootFeature() <em>Root Feature</em>}' containment reference.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getRootFeature()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getRootFeature()
+     * @generated
+     * @ordered
+     */
 	protected Feature rootFeature;
 
 	/**
-	 * The cached value of the '{@link #getConstraints() <em>Constraints</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getConstraints() <em>Constraints</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConstraints()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getConstraints()
+     * @generated
+     * @ordered
+     */
 	protected EList<Constraint> constraints;
 
 	/**
-	 * The cached value of the '{@link #getAnnotatableElement() <em>Annotatable Element</em>}' reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getAnnotatableElement() <em>Annotatable Element</em>}' reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAnnotatableElement()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getAnnotatableElement()
+     * @generated
+     * @ordered
+     */
 	protected EList<EObject> annotatableElement;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected FeatureDiagramImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return featuremodelPackage.Literals.FEATURE_DIAGRAM;
-	}
+        return featuremodelPackage.Literals.FEATURE_DIAGRAM;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Feature getRootFeature() {
-		return rootFeature;
-	}
+        return rootFeature;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NotificationChain basicSetRootFeature(Feature newRootFeature, NotificationChain msgs) {
-		Feature oldRootFeature = rootFeature;
-		rootFeature = newRootFeature;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE, oldRootFeature, newRootFeature);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+        Feature oldRootFeature = rootFeature;
+        rootFeature = newRootFeature;
+        if (eNotificationRequired()) {
+            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE, oldRootFeature, newRootFeature);
+            if (msgs == null) msgs = notification; else msgs.add(notification);
+        }
+        return msgs;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setRootFeature(Feature newRootFeature) {
-		if (newRootFeature != rootFeature) {
-			NotificationChain msgs = null;
-			if (rootFeature != null)
-				msgs = ((InternalEObject)rootFeature).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE, null, msgs);
-			if (newRootFeature != null)
-				msgs = ((InternalEObject)newRootFeature).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE, null, msgs);
-			msgs = basicSetRootFeature(newRootFeature, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE, newRootFeature, newRootFeature));
-	}
+        if (newRootFeature != rootFeature) {
+            NotificationChain msgs = null;
+            if (rootFeature != null)
+                msgs = ((InternalEObject)rootFeature).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE, null, msgs);
+            if (newRootFeature != null)
+                msgs = ((InternalEObject)newRootFeature).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE, null, msgs);
+            msgs = basicSetRootFeature(newRootFeature, msgs);
+            if (msgs != null) msgs.dispatch();
+        }
+        else if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE, newRootFeature, newRootFeature));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<Constraint> getConstraints() {
-		if (constraints == null) {
-			constraints = new EObjectContainmentEList<Constraint>(Constraint.class, this, featuremodelPackage.FEATURE_DIAGRAM__CONSTRAINTS);
-		}
-		return constraints;
-	}
+        if (constraints == null) {
+            constraints = new EObjectContainmentEList<Constraint>(Constraint.class, this, featuremodelPackage.FEATURE_DIAGRAM__CONSTRAINTS);
+        }
+        return constraints;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<EObject> getAnnotatableElement() {
-		if (annotatableElement == null) {
-			annotatableElement = new EObjectResolvingEList<EObject>(EObject.class, this, featuremodelPackage.FEATURE_DIAGRAM__ANNOTATABLE_ELEMENT);
-		}
-		return annotatableElement;
-	}
+        if (annotatableElement == null) {
+            annotatableElement = new EObjectResolvingEList<EObject>(EObject.class, this, featuremodelPackage.FEATURE_DIAGRAM__ANNOTATABLE_ELEMENT);
+        }
+        return annotatableElement;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE:
-				return basicSetRootFeature(null, msgs);
-			case featuremodelPackage.FEATURE_DIAGRAM__CONSTRAINTS:
-				return ((InternalEList<?>)getConstraints()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE:
+                return basicSetRootFeature(null, msgs);
+            case featuremodelPackage.FEATURE_DIAGRAM__CONSTRAINTS:
+                return ((InternalEList<?>)getConstraints()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE:
-				return getRootFeature();
-			case featuremodelPackage.FEATURE_DIAGRAM__CONSTRAINTS:
-				return getConstraints();
-			case featuremodelPackage.FEATURE_DIAGRAM__ANNOTATABLE_ELEMENT:
-				return getAnnotatableElement();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE:
+                return getRootFeature();
+            case featuremodelPackage.FEATURE_DIAGRAM__CONSTRAINTS:
+                return getConstraints();
+            case featuremodelPackage.FEATURE_DIAGRAM__ANNOTATABLE_ELEMENT:
+                return getAnnotatableElement();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE:
-				setRootFeature((Feature)newValue);
-				return;
-			case featuremodelPackage.FEATURE_DIAGRAM__CONSTRAINTS:
-				getConstraints().clear();
-				getConstraints().addAll((Collection<? extends Constraint>)newValue);
-				return;
-			case featuremodelPackage.FEATURE_DIAGRAM__ANNOTATABLE_ELEMENT:
-				getAnnotatableElement().clear();
-				getAnnotatableElement().addAll((Collection<? extends EObject>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE:
+                setRootFeature((Feature)newValue);
+                return;
+            case featuremodelPackage.FEATURE_DIAGRAM__CONSTRAINTS:
+                getConstraints().clear();
+                getConstraints().addAll((Collection<? extends Constraint>)newValue);
+                return;
+            case featuremodelPackage.FEATURE_DIAGRAM__ANNOTATABLE_ELEMENT:
+                getAnnotatableElement().clear();
+                getAnnotatableElement().addAll((Collection<? extends EObject>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE:
-				setRootFeature((Feature)null);
-				return;
-			case featuremodelPackage.FEATURE_DIAGRAM__CONSTRAINTS:
-				getConstraints().clear();
-				return;
-			case featuremodelPackage.FEATURE_DIAGRAM__ANNOTATABLE_ELEMENT:
-				getAnnotatableElement().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE:
+                setRootFeature((Feature)null);
+                return;
+            case featuremodelPackage.FEATURE_DIAGRAM__CONSTRAINTS:
+                getConstraints().clear();
+                return;
+            case featuremodelPackage.FEATURE_DIAGRAM__ANNOTATABLE_ELEMENT:
+                getAnnotatableElement().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE:
-				return rootFeature != null;
-			case featuremodelPackage.FEATURE_DIAGRAM__CONSTRAINTS:
-				return constraints != null && !constraints.isEmpty();
-			case featuremodelPackage.FEATURE_DIAGRAM__ANNOTATABLE_ELEMENT:
-				return annotatableElement != null && !annotatableElement.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case featuremodelPackage.FEATURE_DIAGRAM__ROOT_FEATURE:
+                return rootFeature != null;
+            case featuremodelPackage.FEATURE_DIAGRAM__CONSTRAINTS:
+                return constraints != null && !constraints.isEmpty();
+            case featuremodelPackage.FEATURE_DIAGRAM__ANNOTATABLE_ELEMENT:
+                return annotatableElement != null && !annotatableElement.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 } //FeatureDiagramImpl

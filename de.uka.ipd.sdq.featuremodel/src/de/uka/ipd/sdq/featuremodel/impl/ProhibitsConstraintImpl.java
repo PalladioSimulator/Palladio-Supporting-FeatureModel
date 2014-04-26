@@ -22,22 +22,22 @@ import de.uka.ipd.sdq.featuremodel.featuremodelPackage;
  */
 public class ProhibitsConstraintImpl extends ConstraintImpl implements ProhibitsConstraint {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ProhibitsConstraintImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return featuremodelPackage.Literals.PROHIBITS_CONSTRAINT;
-	}
+        return featuremodelPackage.Literals.PROHIBITS_CONSTRAINT;
+    }
 
 } //ProhibitsConstraintImpl

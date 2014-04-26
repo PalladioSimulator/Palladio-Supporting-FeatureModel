@@ -22,22 +22,22 @@ import de.uka.ipd.sdq.featuremodel.featuremodelPackage;
  */
 public class RequiredConstraintImpl extends ConstraintImpl implements RequiredConstraint {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected RequiredConstraintImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return featuremodelPackage.Literals.REQUIRED_CONSTRAINT;
-	}
+        return featuremodelPackage.Literals.REQUIRED_CONSTRAINT;
+    }
 
 } //RequiredConstraintImpl

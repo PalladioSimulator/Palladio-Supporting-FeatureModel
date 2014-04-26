@@ -22,18 +22,18 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  */
 public interface StringAttributeValue extends AttributeValue {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.confignode.origin.attributes->one(a | a.name = self.name)
-	 *  and
-	 *  self.confignode.origin.attributes->any(a | a.name = self.name).oclIsTypeOf(featuremodel::StringAttribute)
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.confignode.origin.attributes->one(a | a.name = self.name)\r\n and\r\n self.confignode.origin.attributes->any(a | a.name = self.name).oclIsTypeOf(featuremodel::StringAttribute)'"
-	 * @generated
-	 */
+     * <!-- begin-model-doc -->
+     * self.confignode.origin.attributes->one(a | a.name = self.name)
+     *  and
+     *  self.confignode.origin.attributes->any(a | a.name = self.name).oclIsTypeOf(featuremodel::StringAttribute)
+     * @param diagnostics The chain of diagnostics to which problems are to be appended.
+     * @param context The cache of context-specific information.
+     * <!-- end-model-doc -->
+     * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.confignode.origin.attributes->one(a | a.name = self.name)\r\n and\r\n self.confignode.origin.attributes->any(a | a.name = self.name).oclIsTypeOf(featuremodel::StringAttribute)'"
+     * @generated
+     */
 	boolean AttributeValueIsDefinedInFeatureAndEqualsTypeString(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 } // StringAttributeValue

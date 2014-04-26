@@ -17,4 +17,11 @@
        genModel = "model/FeatureModel.genmodel" /> 
   </extension>
 
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated featuremodel -->
+      <parser
+            type="featuremodel"
+            class="de.uka.ipd.sdq.featuremodel.util.featuremodelResourceFactoryImpl"/>
+   </extension>
+
 </plugin>

@@ -23,22 +23,22 @@ import de.uka.ipd.sdq.featuremodel.featuremodelPackage;
  */
 public abstract class ChildRelationImpl extends EObjectImpl implements ChildRelation {
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ChildRelationImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return featuremodelPackage.Literals.CHILD_RELATION;
-	}
+        return featuremodelPackage.Literals.CHILD_RELATION;
+    }
 
 } //ChildRelationImpl
