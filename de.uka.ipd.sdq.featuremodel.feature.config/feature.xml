@@ -2,7 +2,7 @@
 <feature
       id="de.uka.ipd.sdq.featuremodel.feature.config"
       label="Palladio Feature Model - Configuration"
-      version="1.3.0.qualifier">
+      version="1.3.1.qualifier">
 
    <description url="http://www.palladio-simulator.com">
       A configuration model for the Palladio Feature Model. 
@@ -231,21 +231,21 @@ litigation.
          id="de.uka.ipd.sdq.featureconfig"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.3.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="de.uka.ipd.sdq.featureconfig.edit"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.3.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="de.uka.ipd.sdq.featureconfig.editor"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.3.1.qualifier"
          unpack="false"/>
 
 </feature>
