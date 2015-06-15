@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rm:rmap xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0" xmlns:rm="http://www.eclipse.org/buckminster/RMap-1.0">
 
-  <rm:locator searchPathRef="localresources" failOnError="false"/>
-  <rm:locator searchPathRef="featuremodel" failOnError="false" pattern="^de\.uka\.ipd\.sdq\..*" />
-  <rm:locator searchPathRef="palladio-commons" failOnError="false" pattern="^de\.uka\.ipd\.sdq\..*" />
-  <rm:locator searchPathRef="eclipseluna" failOnError="false" pattern="^org\.eclipse\.m2m\..*" />
-  <rm:locator searchPathRef="mdt" failOnError="false" pattern="^org\.eclipse\.ocl" />
-  <rm:locator searchPathRef="emf" failOnError="false" pattern="^org\.eclipse\.emf\..*" />
-  <rm:locator searchPathRef="orbit" failOnError="false" />
-  
+  <rm:locator searchPathRef="featuremodel" failOnError="false" pattern="^de\.uka\.ipd\.sdq\.feature.*" />
+  <rm:redirect pattern=".*"
+		href="https://anonymous:anonymous@svnserver.informatik.kit.edu/i43/svn/code/Build/trunk/org.palladiosimulator.targetPlatformBuild/commons.rmap" />
   
   <rm:searchPath name="featuremodel">
     <rm:provider componentTypes="eclipse.feature,osgi.bundle" readerType="svn" source="true">
@@ -18,56 +13,4 @@
     </rm:provider>
   </rm:searchPath>
 
-  <rm:searchPath name="palladio-commons">
-	  <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
-	 	<rm:property key="buckminster.source" value="false"/>
-	    <rm:property key="buckminster.mutable" value="false"/>
-	  	<rm:uri format="http://sdqweb.ipd.kit.edu/eclipse/commons/releases/1.3/"/>
-	  </rm:provider>
-  </rm:searchPath>
-  <rm:searchPath name="orbit">
-    <rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster" readerType="p2" source="false" mutable="false">
-      <rm:property key="buckminster.source" value="false"/>
-      <rm:property key="buckminster.mutable" value="false"/>
-      <rm:uri format="http://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/"/>
-    </rm:provider>
-  </rm:searchPath>
-  <rm:searchPath name="eclipseluna">
-  <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
- 	<rm:property key="buckminster.source" value="false"/>
-    <rm:property key="buckminster.mutable" value="false"/>
-  	<rm:uri format="http://download.eclipse.org/releases/luna/"/>
-  </rm:provider></rm:searchPath>
-  <rm:searchPath name="xpand">
-  <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
- 	<rm:property key="buckminster.source" value="false"/>
-    <rm:property key="buckminster.mutable" value="false"/>
-  	<rm:uri format="http://download.eclipse.org/modeling/m2t/xpand/updates/releases/"/>
-  </rm:provider></rm:searchPath>
-    <rm:searchPath name="xtext">
-  <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
- 	<rm:property key="buckminster.source" value="false"/>
-    <rm:property key="buckminster.mutable" value="false"/>
-  	<rm:uri format="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
-  </rm:provider></rm:searchPath>
-    <rm:searchPath name="mdt">
-  <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
- 	<rm:property key="buckminster.source" value="false"/>
-    <rm:property key="buckminster.mutable" value="false"/>
-  	<rm:uri format="http://download.eclipse.org/modeling/mdt/updates/releases/"/>
-  </rm:provider></rm:searchPath>
-    <rm:searchPath name="emf">
-  <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
- 	<rm:property key="buckminster.source" value="false"/>
-    <rm:property key="buckminster.mutable" value="false"/>
-  	<rm:uri format="http://download.eclipse.org/modeling/emf/updates/releases/"/>
-  </rm:provider></rm:searchPath>
-  <rm:searchPath name="localresources">
-    <rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster" readerType="local">
-      <rm:uri format="file:///{0}/{1}/">
-        <bc:propertyRef key="workspace.root"/>
-        <bc:propertyRef key="buckminster.component"/>
-      </rm:uri>
-    </rm:provider>
-  </rm:searchPath>
 </rm:rmap>
