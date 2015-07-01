@@ -2,5 +2,5 @@
     <cq:rootRequest name="de.uka.ipd.sdq.featuremodel.buckminster" componentType="eclipse.feature"/>
     <cq:property key="pass" value="anonymous"/>
     <cq:property key="user" value="anonymous"/>
-    <cq:advisorNode namePattern="^de\.uka\.ipd\.sdq\.feature.*" useWorkspace="false"/>
+    <cq:advisorNode namePattern="^de\.uka\.ipd\.sdq\.feature.*" sourceLevel="REQUIRE" useWorkspace="false"/>
 </cq:componentQuery>
