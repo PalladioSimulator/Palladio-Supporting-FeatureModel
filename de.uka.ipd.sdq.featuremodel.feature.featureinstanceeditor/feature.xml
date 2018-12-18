@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="de.uka.ipd.sdq.featuremodel.feature.featureinstanceeditor"
+      label="Feature Model Instance Editor"
+      version="2.1.1.qualifier"
+      license-feature="org.palladiosimulator.license"
+      license-feature-version="1.0.0">
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+      <import plugin="org.eclipse.emf.edit.ui"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="de.uka.ipd.sdq.identifier.edit" version="2.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.ui" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.featureconfig" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.featureconfig.edit" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.featuremodel" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.featuremodel.edit" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.dialogs"/>
+   </requires>
+
+   <plugin
+         id="de.uka.ipd.sdq.featureinstance.editor"
+         download-size="0"
+         install-size="0"
+         version="2.1.0.qualifier"
+         unpack="false"/>
+
+</feature>
