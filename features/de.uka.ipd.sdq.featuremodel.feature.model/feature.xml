@@ -2,7 +2,7 @@
 <feature
       id="de.uka.ipd.sdq.featuremodel.feature.model"
       label="Palladio Feature Model"
-      version="2.1.1.qualifier"
+      version="4.2.0.qualifier"
       license-feature="org.palladiosimulator.license"
       license-feature-version="1.0.0">
 
@@ -24,21 +24,21 @@
          id="de.uka.ipd.sdq.featuremodel"
          download-size="0"
          install-size="0"
-         version="2.1.0.qualifier"
+         version="4.2.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="de.uka.ipd.sdq.featuremodel.edit"
          download-size="0"
          install-size="0"
-         version="2.1.0.qualifier"
+         version="4.2.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="de.uka.ipd.sdq.featuremodel.editor"
          download-size="0"
          install-size="0"
-         version="2.1.0.qualifier"
+         version="4.2.0.qualifier"
          unpack="false"/>
 
 </feature>
