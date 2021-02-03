@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-	<feature url="features/de.uka.ipd.sdq.featuremodel.feature.model_4.3.0.qualifier.jar" id="de.uka.ipd.sdq.featuremodel.feature.model" version="4.3.0.qualifier">
+	<feature url="features/de.uka.ipd.sdq.featuremodel.feature.model_5.0.0.qualifier.jar" id="de.uka.ipd.sdq.featuremodel.feature.model" version="5.0.0.qualifier">
 	   <category name="org.palladiosimulator.support.category"/>
 	</feature>
-	<feature url="features/de.uka.ipd.sdq.featuremodel.feature.model.source_4.3.0.qualifier.jar" id="de.uka.ipd.sdq.featuremodel.feature.model.source" version="4.3.0.qualifier">
+	<feature url="features/de.uka.ipd.sdq.featuremodel.feature.model.source_5.0.0.qualifier.jar" id="de.uka.ipd.sdq.featuremodel.feature.model.source" version="5.0.0.qualifier">
 	   <category name="org.palladiosimulator.support.source.category"/>
 	</feature>
-	<feature url="features/de.uka.ipd.sdq.featuremodel.feature.config_4.3.0.qualifier.jar" id="de.uka.ipd.sdq.featuremodel.feature.config" version="4.3.0.qualifier">
+	<feature url="features/de.uka.ipd.sdq.featuremodel.feature.config_5.0.0.qualifier.jar" id="de.uka.ipd.sdq.featuremodel.feature.config" version="5.0.0.qualifier">
 	   <category name="org.palladiosimulator.support.category"/>
 	</feature>
-	<feature url="features/de.uka.ipd.sdq.featuremodel.feature.config.source_4.3.0.qualifier.jar" id="de.uka.ipd.sdq.featuremodel.feature.config.source" version="4.3.0.qualifier">
+	<feature url="features/de.uka.ipd.sdq.featuremodel.feature.config.source_5.0.0.qualifier.jar" id="de.uka.ipd.sdq.featuremodel.feature.config.source" version="5.0.0.qualifier">
 	   <category name="org.palladiosimulator.support.source.category"/>
 	</feature>
-	<feature url="features/de.uka.ipd.sdq.featuremodel.feature.featureinstanceeditor_4.3.0.qualifier.jar" id="de.uka.ipd.sdq.featuremodel.feature.featureinstanceeditor" version="4.3.0.qualifier">
+	<feature url="features/de.uka.ipd.sdq.featuremodel.feature.featureinstanceeditor_5.0.0.qualifier.jar" id="de.uka.ipd.sdq.featuremodel.feature.featureinstanceeditor" version="5.0.0.qualifier">
 	   <category name="org.palladiosimulator.support.category"/>
 	</feature>
-	<feature url="features/de.uka.ipd.sdq.featuremodel.feature.featureinstanceeditor.source_4.3.0.qualifier.jar" id="de.uka.ipd.sdq.featuremodel.feature.featureinstanceeditor.source" version="4.3.0.qualifier">
+	<feature url="features/de.uka.ipd.sdq.featuremodel.feature.featureinstanceeditor.source_5.0.0.qualifier.jar" id="de.uka.ipd.sdq.featuremodel.feature.featureinstanceeditor.source" version="5.0.0.qualifier">
 	   <category name="org.palladiosimulator.support.source.category"/>
 	</feature>
 	<category-def name="org.palladiosimulator.support.category" label="Palladio Supporting Features">
