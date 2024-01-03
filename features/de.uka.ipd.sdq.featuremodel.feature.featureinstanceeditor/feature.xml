@@ -2,7 +2,7 @@
 <feature
       id="de.uka.ipd.sdq.featuremodel.feature.featureinstanceeditor"
       label="Feature Model Instance Editor"
-      version="5.1.0.qualifier"
+      version="5.2.0.qualifier"
       license-feature="org.palladiosimulator.license"
       license-feature-version="1.0.0">
 
@@ -28,7 +28,7 @@
          id="de.uka.ipd.sdq.featureinstance.editor"
          download-size="0"
          install-size="0"
-         version="5.1.0.qualifier"
+         version="5.2.0.qualifier"
          unpack="false"/>
 
 </feature>
