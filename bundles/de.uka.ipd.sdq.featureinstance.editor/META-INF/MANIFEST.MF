@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: FeatureModelInstance Editor
 Bundle-SymbolicName: de.uka.ipd.sdq.featureinstance.editor;singleton:=true
-Bundle-Version: 5.2.2
+Bundle-Version: 6.0.0.qualifier
 Bundle-Activator: de.uka.ipd.sdq.featureinstance.FeatureModelInstancePlugin
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
@@ -13,12 +13,12 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.emf.edit.ui,
  org.eclipse.core.resources,
  de.uka.ipd.sdq.dialogs,
- de.uka.ipd.sdq.identifier.edit;bundle-version="2.0.0",
+ de.uka.ipd.sdq.identifier.edit,
  org.eclipse.debug.ui;bundle-version="3.4.0",
- de.uka.ipd.sdq.featureconfig;bundle-version="1.0.0",
- de.uka.ipd.sdq.featureconfig.edit;bundle-version="1.0.0",
- de.uka.ipd.sdq.featuremodel;bundle-version="1.0.0",
- de.uka.ipd.sdq.featuremodel.edit;bundle-version="1.0.0"
+ de.uka.ipd.sdq.featureconfig,
+ de.uka.ipd.sdq.featureconfig.edit,
+ de.uka.ipd.sdq.featuremodel,
+ de.uka.ipd.sdq.featuremodel.edit
 Export-Package: de.uka.ipd.sdq.featureinstance
 Bundle-Vendor: sdq.ipd.uka.de
 Bundle-RequiredExecutionEnvironment: JavaSE-17

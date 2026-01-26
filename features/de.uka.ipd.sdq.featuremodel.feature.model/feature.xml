@@ -2,7 +2,7 @@
 <feature
       id="de.uka.ipd.sdq.featuremodel.feature.model"
       label="Palladio Feature Model"
-      version="5.2.2"
+      version="6.0.0.qualifier"
       license-feature="org.palladiosimulator.license"
       license-feature-version="1.0.0">
 
@@ -17,28 +17,28 @@
       <import plugin="org.eclipse.core.resources"/>
       <import plugin="org.eclipse.emf.edit.ui"/>
       <import plugin="org.eclipse.ui.ide"/>
-      <import plugin="de.uka.ipd.sdq.identifier" version="2.0.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.identifier"/>
    </requires>
 
    <plugin
          id="de.uka.ipd.sdq.featuremodel"
          download-size="0"
          install-size="0"
-         version="5.2.2"
+         version="6.0.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="de.uka.ipd.sdq.featuremodel.edit"
          download-size="0"
          install-size="0"
-         version="5.2.2"
+         version="6.0.0.qualifier"
          unpack="false"/>
 
    <plugin
          id="de.uka.ipd.sdq.featuremodel.editor"
          download-size="0"
          install-size="0"
-         version="5.2.2"
+         version="6.0.0.qualifier"
          unpack="false"/>
 
 </feature>

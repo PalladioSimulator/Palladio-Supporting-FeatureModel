@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: de.uka.ipd.sdq.featureconfig;singleton:=true
-Bundle-Version: 5.2.2
+Bundle-Version: 6.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
@@ -14,5 +14,5 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  de.uka.ipd.sdq.featuremodel;visibility:=reexport,
  org.eclipse.ocl.ecore;bundle-version="1.2.1",
- de.uka.ipd.sdq.identifier;bundle-version="2.0.0"
+ de.uka.ipd.sdq.identifier
 Bundle-ActivationPolicy: lazy
