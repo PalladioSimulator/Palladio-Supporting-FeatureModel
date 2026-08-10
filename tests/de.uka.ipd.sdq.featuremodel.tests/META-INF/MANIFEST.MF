@@ -4,5 +4,5 @@ Bundle-Name: Featuremodel Tests
 Bundle-SymbolicName: de.uka.ipd.sdq.featuremodel.tests
 Bundle-Version: 6.0.0.qualifier
 Bundle-Vendor: org.palladiosimulator
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Require-Bundle: org.junit;bundle-version="4.11.0"
